@@ -58,9 +58,9 @@ class  Script(object):
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱❁۪۪
 """
-  FROM_MSG = "<b>❪ sᴇᴛ sᴏᴜʀᴄᴇ ᴄʜᴀᴛ (lAST MSG❫\n\nғᴏʀᴡᴀʀᴅ ᴛʜᴇ LAST ᴍᴇssᴀɢᴇ ᴏʀ ʟᴀsᴛ ᴍᴇssᴀɢᴇ ʟɪɴᴋ ᴏғ sᴏᴜʀᴄᴇ ᴄʜᴀᴛ.\n\n/cancel - cᴀɴᴄᴇʟ ᴛʜɪs ᴘʀᴏᴄᴇss</b>"
+  FROM_MSG = "<b>❪ sᴇᴛ sᴏᴜʀᴄᴇ ᴄʜᴀᴛ (lAST MSG❫\n\nғᴏʀᴡᴀʀᴅ ᴛʜᴇ LAST ᴍᴇssᴀɢᴇ ᴏʀ LAST ᴍᴇssᴀɢᴇ ʟɪɴᴋ ᴏғ sᴏᴜʀᴄᴇ ᴄʜᴀᴛ.\n\n/cancel - cᴀɴᴄᴇʟ ᴛʜɪs ᴘʀᴏᴄᴇss</b>"
   
-  LAZYFIRST_MSG = "<b>❪ sᴇᴛ sᴏᴜʀᴄᴇ ᴄʜᴀᴛ (fIRST MSG❫\n\nғᴏʀᴡᴀʀᴅ ᴛʜᴇ FIRST ᴍᴇssᴀɢᴇ ᴏʀ ʟᴀsᴛ ᴍᴇssᴀɢᴇ ʟɪɴᴋ ᴏғ sᴏᴜʀᴄᴇ ᴄʜᴀᴛ.\n\n/cancel - cᴀɴᴄᴇʟ ᴛʜɪs ᴘʀᴏᴄᴇss</b>"
+  LAZYFIRST_MSG = "<b>❪ sᴇᴛ sᴏᴜʀᴄᴇ ᴄʜᴀᴛ (fIRST MSG❫\n\nғᴏʀᴡᴀʀᴅ ᴛʜᴇ FIRST ᴍᴇssᴀɢᴇ ᴏʀ FIRST ᴍᴇssᴀɢᴇ ʟɪɴᴋ ᴏғ sᴏᴜʀᴄᴇ ᴄʜᴀᴛ.\n\n/cancel - cᴀɴᴄᴇʟ ᴛʜɪs ᴘʀᴏᴄᴇss</b>"
   
   TO_MSG = "<b>❪ ᴄʜᴏᴏsᴇ ᴛᴀʀɢᴇᴛ ᴄʜᴀᴛ ❫\n\nᴄʜᴏᴏsᴇ ʏᴏᴜʀ ᴛᴀʀɢᴇᴛ ᴄʜᴀᴛ ғʀᴏᴍ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴ.\n\n/cancel - cᴀɴᴄᴇʟ ᴛʜɪs ᴘʀᴏᴄᴇss</b>"
   
