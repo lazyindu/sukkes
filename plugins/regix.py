@@ -261,21 +261,21 @@ async def msg_edit(msg, text, button=None, wait=None):
 async def edit(user, msg, title, status, sts):
    i = sts.get(full=True)
    status = 'Forwarding' if status == 5 else f"sleeping {status} s" if str(status).isnumeric() else status
-   percentage = "{:.0f}".format(float(i.fetched)*100/float(i.total))
-   text = TEXT.format(i.fetched, i.total_files, i.duplicate, i.deleted, i.skip, i.filtered, status, percentage, title)
+#    percentage = "{:.0f}".format(float(i.fetched)*100/float(i.total))
+   text = TEXT.format(i.fetched, i.total_files, i.duplicate, i.deleted, i.filtered, status, title)
    await update_forward(user_id=user, last_id=None, start_time=i.start, limit=i.limit, chat_id=i.FROM, toid=i.TO, forward_id=None, msg_id=msg.id, fetched=i.fetched, deleted=i.deleted, total=i.total_files, duplicate=i.duplicate, skip=i.skip, filterd=i.filtered)
-   now = time.time()
-   diff = int(now - i.start)
-   speed = sts.divide(i.fetched, diff)
-   elapsed_time = round(diff) * 1000
-   time_to_completion = round(sts.divide(i.total - i.fetched, int(speed))) * 1000
-   estimated_total_time = elapsed_time + time_to_completion  
-   progress = "●{0}{1}".format(
-       ''.join(["●" for i in range(math.floor(int(percentage) / 4))]),
-       ''.join(["○" for i in range(24 - math.floor(int(percentage) / 4))]))
-   button =  [[InlineKeyboardButton(progress, f'fwrdstatus#{status}#{estimated_total_time}#{percentage}#{i.id}')]]
-   estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
-   estimated_total_time = estimated_total_time if estimated_total_time != '' else '0 s'
+#    now = time.time()
+#    diff = int(now - i.start)
+#    speed = sts.divide(i.fetched, diff)
+#    elapsed_time = round(diff) * 1000
+#    time_to_completion = round(sts.divide(i.total - i.fetched, int(speed))) * 1000
+#    estimated_total_time = elapsed_time + time_to_completion  
+#    progress = "●{0}{1}".format(
+#        ''.join(["●" for i in range(math.floor(int(percentage) / 4))]),
+#        ''.join(["○" for i in range(24 - math.floor(int(percentage) / 4))]))
+#    estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
+#    estimated_total_time = estimated_total_time if estimated_total_time != '' else '0 s'
+   button = []
    if status in ["cancelled", "completed"]:
       button.append([InlineKeyboardButton('• ᴄᴏᴍᴘʟᴇᴛᴇᴅ ​•', url='https://t.me/LazyDeveloperr')])
    else:
